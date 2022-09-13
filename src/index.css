@@ -1,13 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+/*   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url('./Images/cursor.svg'), default;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:row;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+/* h4{
+  font-family: 'Encode Sans SC', sans-serif;
+} */
+
+.App{
+  background-image: url('./Images/geometric.png');
+  background-size: contain;
+}
+
+.button_hero{
+  cursor:url('./Images/cursor.svg'), default;
+}
+
+.buttonModal{
+  cursor:url('./Images/cursor.svg'), default;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #2a3544bf;   /* color of the tracking area */      
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color:#9da1a1;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+/*   border: 2px solid #9da1a1;   *//* creates padding around scroll thumb */
 }
