@@ -25,8 +25,7 @@ export default function Hero(){
         <div className="flex flex-col justify-center items-center h-screen w-screen overflow-hidden">
             <main className="hero_container w-[90%] sm:w-6/12 border-y-[#0e7490] border-2 border-x-0">
                 <h1 className="sm:text-6xl text-4xl text-center mt-20 font-['Archivo'] text-[#a78bfa]" data-aos="fade-up" data-aos-duration="2000">CONSIGLIA D'AMARO</h1>
-                <h4 className="mt-3 mb-20 text-white text-center font-['Encode_Sans_SC'] text-sm sm:text-md" data-aos="fade-up" data-aos-duration="2000">A fully responsive site template designed by me, ispirated by Html5 up<br></br> and released
-                    for free under the Creative Commons license.</h4>
+                <h4 className="mt-3 mb-20 text-white text-center font-['Encode_Sans_SC'] text-md sm:text-lg" data-aos="fade-up" data-aos-duration="2000">Sono una full-stack developer, amante di gatti, <br></br> appassionata al mondo del web design e del cinema.</h4>
             </main>
             <div className="h-20 bg-[#0e7490] w-[2px] ml-px"></div>
             <section className="w-[90%] sm:w-6/12 h-14 flex justify-center">
@@ -47,12 +46,15 @@ export default function Hero(){
             {AboutOpenModal && <AboutModal closeAboutModal={setAboutOpenModal} />}
             {WorkOpenModal && <WorkModal closeWorkModal={setWorkOpenModal} />}
             {ContactOpenModal && <ContactModal closeContactModal={setContactOpenModal} />}
-            <div className="p-5">
+            <div className="p-5 flex flex-col mt-2">
             <p className="text-white flex flex-row gap-2 text-xs font-['Encode_Sans_SC']">If you are interested in the project code, click here: 
                 <a className="aLink" href="https://github.com/clariglia/personal-project">
                     <img className="hover:fill-[#a78bfa] fill-white" src="./github.svg" alt="github repo" width="18" height="18"></img>
                 </a>
             </p>
+            <p className="text-xs font-['Encode_Sans_SC'] flex justify-center text-white">© thanks to&nbsp;
+             <a className="hover:text-[#a78bfa] duration-150 hover:font-bold" href="https://html5up.net/">html5&nbsp;</a> 
+             for the insipiration</p>
             </div>
         </div>
 
