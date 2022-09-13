@@ -25,7 +25,7 @@ export default function Hero(){
         <div className="flex flex-col justify-center items-center h-screen w-screen overflow-hidden">
             <main className="hero_container w-[90%] sm:w-6/12 border-y-[#0e7490] border-2 border-x-0">
                 <h1 className="sm:text-6xl text-4xl text-center mt-20 font-['Archivo'] text-[#a78bfa]" data-aos="fade-up" data-aos-duration="2000">CONSIGLIA D'AMARO</h1>
-                <h4 className="mt-3 mb-20 text-white text-center font-['Encode_Sans_SC'] text-md sm:text-lg" data-aos="fade-up" data-aos-duration="2000">Sono una full-stack developer, amante di gatti, <br></br> appassionata al mondo del web design e del cinema.</h4>
+                <h4 className="mt-3 mb-20 text-white text-center font-['Encode_Sans_SC'] text-sm sm:text-md" data-aos="fade-up" data-aos-duration="2000">Sono una full-stack developer, amante di gatti, <br></br> appassionata al mondo del web design e del cinema.</h4>
             </main>
             <div className="h-20 bg-[#0e7490] w-[2px] ml-px"></div>
             <section className="w-[90%] sm:w-6/12 h-14 flex justify-center">
