@@ -32,16 +32,16 @@ export default function Hero(){
             <section className="w-[90%] sm:w-6/12 h-14 flex justify-center">
                 <button onClick={()=>{
                     setIntroOpenModal(true);
-                }} className="button_hero rounded-l-md border-2 hover:bg-[#0e7490]/25 border-[#0e7490] text-white w-28">INTRO</button>
+                }} className="button_hero rounded-l-md border-2 hover:bg-[#0e7490]/25 border-[#0e7490] text-white w-28 duration-200">INTRO</button>
                 <button onClick={()=>{
                     setAboutOpenModal(true);
-                }} className="button_hero border-y-[#0e7490] hover:bg-[#0e7490]/25 border-2 border-x-0 text-white w-28">ABOUT</button>
+                }} className="button_hero border-y-[#0e7490] hover:bg-[#0e7490]/25 border-2 border-x-0 text-white w-28 duration-200">ABOUT</button>
                 <button onClick={()=>{
                     setWorkOpenModal(true);
-                }}className="button_hero text-white w-28 border-2 hover:bg-[#0e7490]/25 border-y-[#0e7490] border-l-[#0e7490] border-r-0">WORK</button>
+                }}className="button_hero text-white w-28 border-2 hover:bg-[#0e7490]/25 border-y-[#0e7490] border-l-[#0e7490] border-r-0 duration-200">WORK</button>
                 <button onClick={()=>{
                     setContactOpenModal(true);
-                }} className="button_hero rounded-r-md border-2 border-[#0e7490] text-white w-28 hover:bg-[#0e7490]/25">CONTACT</button>
+                }} className="button_hero rounded-r-md border-2 border-[#0e7490] text-white w-28 hover:bg-[#0e7490]/25 duration-200">CONTACT</button>
             </section>
             {IntroOpenModal && <IntroModal closeIntroModal={setIntroOpenModal} />}
             {AboutOpenModal && <AboutModal closeAboutModal={setAboutOpenModal} />}

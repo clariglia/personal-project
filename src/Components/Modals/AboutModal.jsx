@@ -5,12 +5,12 @@ export default function AboutModal({closeAboutModal}){
         <div className="modalBackground w-screen h-screen fixed flex justify-center items-center backdrop-blur-sm">
             <div className="modalContainer bg-[#0f172a]/75 rounded-md w-[100%] sm:w-[60%] md:w-[60%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]" data-aos="zoom-in">
                 <div className="flex flex-row-reverse p-2">
-                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full" onClick={()=> closeAboutModal(false)}> 
+                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full duration-200" onClick={()=> closeAboutModal(false)}> 
                         <img src="./closemodal.svg" alt="close modal"></img> 
                     </button>
                 </div>
                 <div className="title">
-                <h2 className="text-[#a78bfa] font-bold font-['Encode_Sans_Expanded'] text-2xl ml-4 mb-6">ABOUT</h2>
+                <h2 className="text-[#a78bfa] font-bold font-['Encode_Sans_Expanded'] text-2xl ml-4 pl-3 mb-6">ABOUT</h2>
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <img src="./mastroianni.jpg" alt="La dolce vita" className="object-fill h-48 w-96 rounded-md mb-6"></img>

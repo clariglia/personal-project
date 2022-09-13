@@ -5,12 +5,12 @@ export default function WorkModal({closeWorkModal}){
         <div className="modalBackground w-screen h-screen fixed flex justify-center items-center backdrop-blur-sm">
             <div className="modalContainer bg-[#0f172a]/75 rounded-md w-[100%] sm:w-[60%] md:w-[60%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]"  data-aos="zoom-in">
                 <div className="flex flex-row-reverse p-2">
-                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full" onClick={()=> closeWorkModal(false)}>
+                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full duration-200" onClick={()=> closeWorkModal(false)}>
                         <img src="./closemodal.svg" alt="close modal"></img>
                     </button>
                 </div>
                 <div className="title">
-                <h2 className="text-[#a78bfa] font-bold font-['Encode_Sans_Expanded'] text-2xl ml-4 mb-6">WORK</h2>
+                <h2 className="text-[#a78bfa] font-bold font-['Encode_Sans_Expanded'] text-2xl ml-4 pl-3 mb-6">WORK</h2>
                 </div>
                 <div className="body flex justify-center items-center flex-col">
                     <img src="./codingg.avif" alt="coding" className="object-fill h-48 w-96 rounded-md mb-6"></img>
