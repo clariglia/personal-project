@@ -23,31 +23,39 @@ export default function Hero(){
     
     return(
         <div className="flex flex-col justify-center items-center h-screen w-screen overflow-hidden">
-            <main className="hero_container w-6/12 border-y-[#0e7490] border-2 border-x-0">
-                <h1 className="text-6xl text-center mt-20 font-['Archivo'] text-[#a78bfa]" data-aos="fade-up" data-aos-duration="2000">CONSIGLIA D'AMARO</h1>
-                <h4 className="mt-3 mb-20 text-white text-center font-['Encode_Sans_SC']" data-aos="fade-up" data-aos-duration="2000">A fully responsive site template designed by me and released<br></br>
+            <main className="hero_container w-[90%] sm:w-6/12 border-y-[#0e7490] border-2 border-x-0">
+                <h1 className="sm:text-6xl text-4xl text-center mt-20 font-['Archivo'] text-[#a78bfa]" data-aos="fade-up" data-aos-duration="2000">CONSIGLIA D'AMARO</h1>
+                <h4 className="mt-3 mb-20 text-white text-center font-['Encode_Sans_SC'] text-sm sm:text-md" data-aos="fade-up" data-aos-duration="2000">A fully responsive site template designed by me, ispirated by Html5 up<br></br> and released
                     for free under the Creative Commons license.</h4>
             </main>
             <div className="h-20 bg-[#0e7490] w-[2px] ml-px"></div>
-            <section className="w-6/12 h-14 flex justify-center">
+            <section className="w-[90%] sm:w-6/12 h-14 flex justify-center">
                 <button onClick={()=>{
                     setIntroOpenModal(true);
-                }} className="button_hero rounded-l-md border-2 border-[#0e7490] text-white w-28">INTRO</button>
+                }} className="button_hero rounded-l-md border-2 hover:bg-[#0e7490]/25 border-[#0e7490] text-white w-28">INTRO</button>
                 <button onClick={()=>{
                     setAboutOpenModal(true);
-                }} className="button_hero border-y-[#0e7490] border-2 border-x-0 text-white w-28">ABOUT</button>
+                }} className="button_hero border-y-[#0e7490] hover:bg-[#0e7490]/25 border-2 border-x-0 text-white w-28">ABOUT</button>
                 <button onClick={()=>{
                     setWorkOpenModal(true);
-                }}className="button_hero text-white w-28 border-2 border-y-[#0e7490] border-l-[#0e7490] border-r-0">WORK</button>
+                }}className="button_hero text-white w-28 border-2 hover:bg-[#0e7490]/25 border-y-[#0e7490] border-l-[#0e7490] border-r-0">WORK</button>
                 <button onClick={()=>{
                     setContactOpenModal(true);
-                }} className="button_hero rounded-r-md border-2 border-[#0e7490] text-white w-28">CONTACT</button>
+                }} className="button_hero rounded-r-md border-2 border-[#0e7490] text-white w-28 hover:bg-[#0e7490]/25">CONTACT</button>
             </section>
             {IntroOpenModal && <IntroModal closeIntroModal={setIntroOpenModal} />}
             {AboutOpenModal && <AboutModal closeAboutModal={setAboutOpenModal} />}
             {WorkOpenModal && <WorkModal closeWorkModal={setWorkOpenModal} />}
             {ContactOpenModal && <ContactModal closeContactModal={setContactOpenModal} />}
-
+            <div className="p-5">
+            <p className="text-white flex flex-row gap-2 text-sm font-['Encode_Sans_SC']">If you are interested in the project code, click here: 
+                <a className="aLink" href="https://github.com/clariglia/personal-project">
+                    <img className="hover:fill-[#a78bfa] fill-white" src="./github.svg" alt="github repo" width="20" height="20"></img>
+                </a>
+            </p>
+            </div>
         </div>
+
+        
     )
 }

@@ -3,9 +3,9 @@ export default function AboutModal({closeAboutModal}){
 
     return(
         <div className="modalBackground w-screen h-screen fixed flex justify-center items-center backdrop-blur-sm">
-            <div className="modalContainer w-2/5 h-4/5 bg-[#0f172a]/75 rounded-md md:h-3/5 md:w-3/5" data-aos="zoom-in">
-                <div className="flex flex-row-reverse">
-                    <button className="buttonModal" onClick={()=> closeAboutModal(false)}> 
+            <div className="modalContainer bg-[#0f172a]/75 rounded-md w-[100%] sm:w-[60%] md:w-[60%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]" data-aos="zoom-in">
+                <div className="flex flex-row-reverse p-2">
+                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full" onClick={()=> closeAboutModal(false)}> 
                         <img src="./closemodal.svg" alt="close modal"></img> 
                     </button>
                 </div>

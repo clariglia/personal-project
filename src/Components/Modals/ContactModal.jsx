@@ -4,28 +4,28 @@ export default function ContactModal({closeContactModal}){
 
     return(
         <div className="modalBackground w-screen h-screen fixed flex justify-center items-center backdrop-blur-sm">
-            <div className="modalContainer w-2/5 h-4/5 bg-[#0f172a]/75 rounded-md md:h-3/5 md:w-3/5" data-aos="zoom-in">
-                <div className="flex flex-row-reverse">
-                    <button className="buttonModal" onClick={()=> closeContactModal(false)}> 
+            <div className="modalContainer bg-[#0f172a]/75 rounded-md w-[100%] sm:w-[60%] md:w-[60%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]" data-aos="zoom-in">
+                <div className="flex flex-row-reverse p-2">
+                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full" onClick={()=> closeContactModal(false)}> 
                         <img src="./closemodal.svg" alt="close modal"></img>
                     </button>
                 </div>
                 <div className="title">
-                <h2 className="text-[#a78bfa] font-bold font-['Encode_Sans_Expanded'] text-2xl ml-4 mb-6">CONTACT</h2>
+                <h2 className="text-[#a78bfa] font-bold font-['Encode_Sans_SC'] text-2xl ml-4 mb-6">CONTACT</h2>
                 </div>
                 <section className="body flex flex-col justify-center items-center gap-3">
                     <img src="./contact.avif" alt="La dolce vita" className="object-fill h-48 w-96 rounded-md mb-6"></img>
                     <p className="text-white font-['Poppins'] text-center">Se vuoi saperne di più, o spulciare il mio portfolio,<br></br> 
                     contattami a questi indirizzi:</p>
                     <div className="flex flex-row gap-5">
-                        <a href="https://www.linkedin.com/in/consiglia-d-amaro-723015230/">
+                        <a className="aLink" href="https://www.linkedin.com/in/consiglia-d-amaro-723015230/">
                             <img width={30} height={30} src="./linkedin.svg" alt="linkedin"></img>
                         </a>
-                        <a href="https://github.com/clariglia">
+                        <a className="aLink" href="https://github.com/clariglia">
                             <img src="./github.svg" width={30} height={30} alt="github"></img>
                         </a>
                     </div>
-                    <div className="flex flex-col justify-start items-start gap-3 mt-9">
+                    <div className="flex flex-col justify-start items-start gap-3 mt-9 p-5">
                         <div className="relative flex flex-row-reverse justify-center gap-4">
                             <p onClick={onCopyHandler} id='email' className="flex flex-row-reverse justify-center font-['Poppins'] text-white">consigliadamaro0@gmail.com</p>
                             <img src="./email.svg" width={30} height={30} alt="email"></img>

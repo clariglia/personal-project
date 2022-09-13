@@ -3,9 +3,9 @@ export default function WorkModal({closeWorkModal}){
 
     return(
         <div className="modalBackground w-screen h-screen fixed flex justify-center items-center backdrop-blur-sm">
-            <div className="modalContainer w-2/5 max-h-4/5 h-4/5 bg-[#0f172a]/75 rounded-md md:h-3/5 md:w-3/5"  data-aos="zoom-in">
-                <div className="flex flex-row-reverse">
-                    <button className="buttonModal" onClick={()=> closeWorkModal(false)}>
+            <div className="modalContainer bg-[#0f172a]/75 rounded-md w-[100%] sm:w-[60%] md:w-[60%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]"  data-aos="zoom-in">
+                <div className="flex flex-row-reverse p-2">
+                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full" onClick={()=> closeWorkModal(false)}>
                         <img src="./closemodal.svg" alt="close modal"></img>
                     </button>
                 </div>
@@ -15,7 +15,7 @@ export default function WorkModal({closeWorkModal}){
                 <div className="body flex justify-center items-center flex-col">
                     <img src="./codingg.avif" alt="coding" className="object-fill h-48 w-96 rounded-md mb-6"></img>
                     <div className="h-60 max-h-60 overflow-y-auto p-9">
-                        <p className="text-white font-['Encode_Sans_Expanded']">Sono una fullstack web developer.<br></br>
+                        <p className="text-white font-['Poppins']">Sono una fullstack web developer.<br></br>
                         In quest'anno, grazie al corso Develhope, ho mosso i primi passi
                         su come fare una SPA (Single Page Application).<br></br>
                         Ho iniziato da Git/Github, strumento fondamentale per sfruttare
