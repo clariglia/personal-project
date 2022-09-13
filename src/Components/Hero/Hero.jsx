@@ -48,9 +48,9 @@ export default function Hero(){
             {WorkOpenModal && <WorkModal closeWorkModal={setWorkOpenModal} />}
             {ContactOpenModal && <ContactModal closeContactModal={setContactOpenModal} />}
             <div className="p-5">
-            <p className="text-white flex flex-row gap-2 text-sm font-['Encode_Sans_SC']">If you are interested in the project code, click here: 
+            <p className="text-white flex flex-row gap-2 text-xs font-['Encode_Sans_SC']">If you are interested in the project code, click here: 
                 <a className="aLink" href="https://github.com/clariglia/personal-project">
-                    <img className="hover:fill-[#a78bfa] fill-white" src="./github.svg" alt="github repo" width="20" height="20"></img>
+                    <img className="hover:fill-[#a78bfa] fill-white" src="./github.svg" alt="github repo" width="18" height="18"></img>
                 </a>
             </p>
             </div>

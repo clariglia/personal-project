@@ -5,6 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500&display=swap');
 
+
+::selection {
+  background-color: #10B981;
+  color: black;
+}
+
+
 body {
   margin: 0;
 /*   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -60,3 +67,4 @@ body::-webkit-scrollbar-track {
 .aLink{
   cursor:url('../src/Images/cursor.svg'), default;
 }
+
