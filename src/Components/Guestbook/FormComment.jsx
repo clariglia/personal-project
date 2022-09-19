@@ -8,8 +8,7 @@ export default function FormComment(){
 
     async function handleComment(event){
         event.preventDefault()
-        const url_backend = process.env.REACT_APP_URL_BACKEND
-        const response = await fetch(url_backend, {
+        const response = await fetch(process.env.REACT_APP_URL_BACKEND, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({mittente : from.current.value, message : message.current.value})
@@ -34,14 +33,14 @@ export default function FormComment(){
             </button>
             <form onSubmit={handleComment} className="flex flex-col justify-center gap-12">
                 <div className="relative">
-                    <input className="inputFrom bg-transparent border-[#0e7490] border-2 rounded-md h-12 w-full" 
+                    <input className="inputFrom bg-transparent border-[#0e7490] border-2 rounded-md h-12 w-full text-white" 
                     type="text" 
                     name="from" 
                     ref={from} required />
                     <label className="absolute text-white font-['Encode_Sans_SC'] top-3 left-2 font-bold transition-all duration-300 ease-out">FROM:</label>
                 </div>
                 <div className="relative">
-                    <textarea className="border-[#0e7490] border-2 bg-transparent rounded-md inputFrom" 
+                    <textarea className="border-[#0e7490] border-2 bg-transparent rounded-md inputFrom text-white" 
                     type="text" 
                     name="message" 
                     rows="6" 

@@ -4,9 +4,8 @@ import { Link } from "react-router-dom"
 
 export default function Guestbook(){
     const [data, setData] = useState([])
-    const url_backend = process.env.REACT_APP_URL_BACKEND
     useEffect(()=>{
-        fetch(url_backend)
+        fetch(process.env.REACT_APP_URL_BACKEND)
         .then(response => response.json())
         .then(data => setData(data))
     }, [])
