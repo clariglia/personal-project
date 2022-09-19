@@ -37,14 +37,6 @@ body {
   background-size: contain;
 }
 
-.button_hero{
-  cursor:url('./Images/cursor.svg'), default;
-}
-
-.buttonModal{
-  cursor:url('./Images/cursor.svg'), default;
-}
-
 *::-webkit-scrollbar {
   width: 7px;               /* width of the entire scrollbar */
 }
@@ -64,7 +56,18 @@ body::-webkit-scrollbar-track {
 /*   border: 2px solid #9da1a1;   *//* creates padding around scroll thumb */
 }
 
-.aLink{
+.cursor{
+  cursor:url('../src/Images/cursor.svg'), default;
+}
+.cursor:hover{
   cursor:url('../src/Images/cursor.svg'), default;
 }
 
+
+ 
+.inputFrom:focus + label,
+.inputFrom:focus-visible + label,
+.inputFrom:active + label {
+  top: -2rem;
+  transition: all .3s ease-in-out;
+}

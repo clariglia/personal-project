@@ -3,10 +3,10 @@ import onCopyHandler from "../Hook/useCopyHandler";
 export default function ContactModal({closeContactModal}){
 
     return(
-        <div className="modalBackground w-screen h-screen fixed flex justify-center items-center backdrop-blur-sm">
+        <div className="modalBackground w-screen h-screen fixed top-0 bottom-0 flex justify-center items-center backdrop-blur-sm">
             <div className="modalContainer bg-[#0f172a]/75 rounded-md w-[100%] sm:w-[60%] md:w-[60%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]" data-aos="zoom-in">
                 <div className="flex flex-row-reverse p-2">
-                    <button className="buttonModal hover:bg-[#0e7490]/25 rounded-full duration-200" onClick={()=> closeContactModal(false)}> 
+                    <button className="cursor hover:bg-[#0e7490]/25 rounded-full duration-200" onClick={()=> closeContactModal(false)}> 
                         <img src="./closemodal.svg" alt="close modal"></img>
                     </button>
                 </div>
