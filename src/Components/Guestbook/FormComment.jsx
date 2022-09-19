@@ -8,7 +8,8 @@ export default function FormComment(){
 
     async function handleComment(event){
         event.preventDefault()
-        const response = await fetch('http://localhost:3001/api/comments', {
+        const url_backend = process.env.REACT_APP_URL_BACKEND
+        const response = await fetch(url_backend, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({mittente : from.current.value, message : message.current.value})
